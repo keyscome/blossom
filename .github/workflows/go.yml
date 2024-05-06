@@ -24,7 +24,6 @@ jobs:
 
     - name: Go mod
       run: | 
-        go mod init github.com/keyscome/blossom
         go get .
         go mod tidy
         go mod verify
