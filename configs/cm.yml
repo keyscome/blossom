@@ -1,0 +1,11 @@
+# Default Configuration Tool When There is NOT -cm
+cm: ｜
+  ansible
+  # terraform
+
+# Default Configuration for Convenience
+ansible:
+
+terraform:
+  aws:
+  azure:

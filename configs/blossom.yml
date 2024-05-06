@@ -1,0 +1,8 @@
+# Default Blossom Tool When There is NOT Subcommand
+blossom: |
+  cm
+  # test
+  # rt
+  # wf
+  # measure
+  # kanban
