@@ -19,3 +19,6 @@
 # Dependency directories
 /vendor/
 /go.sum
+
+# Binary files
+/bin/
