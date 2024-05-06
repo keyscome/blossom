@@ -13,4 +13,5 @@ RUN add-apt-repository --yes --update ppa:ansible/ansible \
 WORKDIR /ansible
 
 # 默认运行ansible --version检查版本
-CMD ["ansible", "--version"]
+ENTRYPOINT [ "ansible" ]
+CMD ["--version"]
