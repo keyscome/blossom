@@ -1,0 +1,4 @@
+monitor:
+  disk:
+    - /
+    - /data
