@@ -6,8 +6,8 @@ import (
 	"os/exec"
 	"time"
 
-	tea "github.com/charmbracelet/bubbletea"
 	"github.com/charmbracelet/bubbles/progress"
+	tea "github.com/charmbracelet/bubbletea"
 	"github.com/charmbracelet/lipgloss"
 	"github.com/shirou/gopsutil/cpu"
 	"github.com/shirou/gopsutil/disk"
@@ -180,7 +180,7 @@ func (m model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 // View 渲染 TUI 界面
 func (m model) View() string {
 	// 标题
-	title := lipgloss.NewStyle().Bold(true).Foreground(lipgloss.Color("63")).Render("🌸 Bloosom DevOps Tool")
+	title := lipgloss.NewStyle().Bold(true).Foreground(lipgloss.Color("63")).Render("🌸 Blossom DevOps Tool")
 	// 命令输出面板
 	cmdTitle := lipgloss.NewStyle().Bold(true).Underline(true).Render("Command Output")
 	cmdPanel := lipgloss.NewStyle().Border(lipgloss.RoundedBorder()).Padding(1, 2).Render(

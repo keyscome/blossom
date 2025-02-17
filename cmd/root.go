@@ -8,13 +8,13 @@ import (
 	"github.com/spf13/viper"
 )
 
-// rootCmd 是 Bloosom 工具的根命令
+// rootCmd 是 Blossom 工具的根命令
 var rootCmd = &cobra.Command{
-	Use:   "bloosom",
-	Short: "Bloosom DevOps Tool",
-	Long:  "Bloosom 是一个 DevOps 工具，能够在执行命令的同时显示实时监控信息。",
+	Use:   "blossom",
+	Short: "Blossom DevOps Tool",
+	Long:  "Blossom 是一个 DevOps 工具，能够在执行命令的同时显示实时监控信息。",
 	Run: func(cmd *cobra.Command, args []string) {
-		fmt.Println("请使用子命令，例如： 'bloosom monitor' 来启动监控界面")
+		fmt.Println("请使用子命令，例如： 'blossom monitor' 来启动监控界面")
 	},
 }
 
