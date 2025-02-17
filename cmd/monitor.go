@@ -134,7 +134,7 @@ func (m model) Init() tea.Cmd {
 
 // tick 每秒发送 tickMsg
 func tick() tea.Cmd {
-	return tea.Tick(time.Second, func(t time.Time) tea.Msg {
+	return tea.Tick(3 * time.Second, func(t time.Time) tea.Msg {
 		return tickMsg(t)
 	})
 }
@@ -142,8 +142,9 @@ func tick() tea.Cmd {
 // runCmd 执行命令 "ls ~"（模拟 watch 命令）
 func runCmd() tea.Cmd {
 	return func() tea.Msg {
-		home := os.Getenv("HOME")
-		out, err := exec.Command("ls", home).CombinedOutput()
+		// home := os.Getenv("HOME")
+		// out, err := exec.Command("ls", home).CombinedOutput()
+		out, err := exec.Command("echo", "hello").CombinedOutput()
 		if err != nil {
 			return cmdOutputMsg(fmt.Sprintf("Command error: %v", err))
 		}

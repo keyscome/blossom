@@ -28,6 +28,6 @@ func Execute() {
 
 func init() {
 	// 定义全局标志：配置文件路径
-	rootCmd.PersistentFlags().StringP("config", "c", "config.yaml", "配置文件路径")
+	rootCmd.PersistentFlags().StringP("config", "c", "config.yml", "配置文件路径")
 	viper.BindPFlag("config", rootCmd.PersistentFlags().Lookup("config"))
 }
