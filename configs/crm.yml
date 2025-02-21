@@ -1,0 +1,28 @@
+cluster:
+  node1: 
+    hostname: crm1
+    tag:
+      - zookeeper
+      - kafka
+      - mysql
+      - nacos
+      - redis
+      - rabbitmq
+      - minio
+      - elasticsearch
+      - kibana
+      - logstash
+      - filebeat
+      
+  node2: 
+    hostname: crm2
+  node3: 
+    hostname: crm3
+  node4:
+    hostname: crm4
+  node5:
+    hostname: crm5
+
+mw:
+  zookeeper:
+
